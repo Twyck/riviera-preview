@@ -81,6 +81,7 @@ address { font-style: normal; }
 .serif { font-family: var(--serif); font-weight: 400; text-transform: none; letter-spacing: -0.01em; }
 .display .serif { font-style: italic; letter-spacing: -0.015em; }
 .label {
+  width: fit-content;
   font-family: var(--sans);
   font-size: 0.74rem; font-weight: 700;
   letter-spacing: 0.18em; text-transform: uppercase;
@@ -365,23 +366,22 @@ address { font-style: normal; }
 .pizzas__list { position: relative; z-index: 2; border-top: 2px solid var(--line-paper); }
 .pizza {
   position: relative;
-  display: flex; align-items: center; gap: 24px; flex-wrap: wrap;
-  padding: 8px var(--gutter);
+  display: flex; flex-direction: column; align-items: flex-start; gap: 6px;
+  padding: 10px var(--gutter) 18px;
   border-bottom: 2px solid var(--line-paper);
+  overflow: hidden; /* o nome desliza só dentro da própria linha */
 }
-.pizza__name { font-size: clamp(3.6rem, 1rem + 11vw, 13rem); line-height: 0.92; white-space: nowrap; transition: color 0.3s, -webkit-text-stroke-color 0.3s; }
-.pizza__desc { max-width: 30ch; font-size: 0.98rem; color: var(--paper); }
-.pizza:nth-child(even) { justify-content: flex-end; }
-.pizza:nth-child(even) .pizza__desc { order: -1; text-align: right; }
+/* Limitado pela largura: o nome mais longo sempre cabe na tela */
+.pizza__name { font-size: min(13rem, 1rem + 11vw); line-height: 0.92; white-space: nowrap; max-width: 100%; transition: color 0.3s, -webkit-text-stroke-color 0.3s; }
+.pizza__desc { max-width: 34ch; font-size: 0.98rem; color: var(--paper); }
+.pizza:nth-child(even) { align-items: flex-end; }
+.pizza:nth-child(even) .pizza__desc { text-align: right; }
 @media (hover: hover) and (min-width: 1024px) {
   .pizza__name { color: var(--paper); }
   .pizza:hover .pizza__name { color: transparent; -webkit-text-stroke: 2px var(--paper); }
 }
 .pizzas__hand { position: absolute; z-index: 3; right: -2vw; top: 18%; width: clamp(220px, 30vw, 520px); pointer-events: none; filter: drop-shadow(0 20px 30px rgba(60, 0, 0, 0.3)); }
 @media (max-width: 767px) {
-  .pizza { padding-block: 14px; }
-  .pizza:nth-child(even) .pizza__desc { order: 0; text-align: left; }
-  .pizza:nth-child(even) { justify-content: flex-start; }
   .pizzas__hand { top: auto; bottom: 0; width: 58vw; }
 }
 

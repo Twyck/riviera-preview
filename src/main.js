@@ -287,10 +287,18 @@ function choreography() {
       gsap.fromTo(el, { rotate: i % 2 ? 12 : -12 }, { rotate: i % 2 ? 4 : -4, ease: 'none', scrollTrigger: { trigger: el, start: 'top bottom', end: 'center center', scrub: true } })
     })
 
-    /* Pizzas: os nomes deslizam em sentidos alternados */
-    $$('.pizza').forEach((row) => {
-      const dir = Number(row.dataset.dir)
-      gsap.fromTo($('.pizza__name', row), { xPercent: dir * -10 }, { xPercent: dir * 10, ease: 'none', scrollTrigger: { trigger: row, start: 'top bottom', end: 'bottom top', scrub: true } })
+    /* Pizzas: os nomes deslizam para dentro, só até o limite do espaço livre da linha */
+    $$('.pizza').forEach((row, i) => {
+      const name = $('.pizza__name', row)
+      const room = () => {
+        const pad = parseFloat(getComputedStyle(row).paddingLeft) * 2
+        return Math.max(0, Math.min(row.clientWidth - pad - name.scrollWidth, window.innerWidth * 0.14))
+      }
+      const sign = i % 2 === 0 ? 1 : -1 // linhas alinhadas à esquerda vão para a direita, e vice-versa
+      gsap.fromTo(name, { x: 0 }, {
+        x: () => sign * room(), ease: 'none',
+        scrollTrigger: { trigger: row, start: 'top bottom', end: 'bottom top', scrub: true, invalidateOnRefresh: true },
+      })
     })
 
     /* Relógio gigante entra subindo */
