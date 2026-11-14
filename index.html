@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Riviera Bar | Desde 1949, ou desde sempre. Aberto 24h na Paulista.</title>
+  <meta name="description" content="O Riviera Bar, na esquina da Avenida Paulista com a Consolação, está aberto 24 horas desde 1949, ou desde sempre. Cozinha democrática, coquetelaria autoral e reservas para o Andar Superior.">
+  <meta name="theme-color" content="#EC1D26">
+  <!-- Prévia para aprovação: remover no lançamento oficial -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="%SITE_URL%/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Riviera Bar">
+  <meta property="og:title" content="Riviera Bar | Sempre abertos, desde 1949">
+  <meta property="og:description" content="Bar 24h na esquina da Paulista com a Consolação. Desde 1949, ou desde sempre.">
+  <meta property="og:url" content="%SITE_URL%/">
+  <meta property="og:image" content="%SITE_URL%/og-riviera.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="img/pizza-recorte-800.webp" imagesrcset="img/pizza-recorte-480.webp 480w, img/pizza-recorte-800.webp 800w, img/pizza-recorte-1010.webp 1010w" imagesizes="(min-width: 1024px) 46vw, 92vw" fetchpriority="high">
+
+  <script>
+    ;(function () {
+      var d = document.documentElement
+      d.classList.add('js')
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        d.classList.add('js-intro')
+        setTimeout(function () { d.classList.remove('js-intro') }, 3200)
+      }
+    })()
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarOrPub",
+    "name": "Riviera Bar",
+    "slogan": "Desde 1949, ou desde sempre",
+    "foundingDate": "1949",
+    "url": "%SITE_URL%/",
+    "image": "%SITE_URL%/og-riviera.jpg",
+    "telephone": "+55 11 94889-0012",
+    "servesCuisine": ["Bar", "Comida de bar", "Coquetelaria"],
+    "address": { "@type": "PostalAddress", "streetAddress": "Avenida Paulista, 2584", "addressLocality": "São Paulo", "addressRegion": "SP", "postalCode": "01310-300", "addressCountry": "BR" },
+    "geo": { "@type": "GeoCoordinates", "latitude": -23.5552717, "longitude": -46.6630382 },
+    "openingHoursSpecification": { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59" },
+    "acceptsReservations": "https://r.odionisio.com/riviera-bar",
+    "hasMenu": "https://drive.google.com/file/d/1eYTcQeoxw12Ocu8ZevS_h83mUkC-VT-z/view",
+    "sameAs": ["https://www.instagram.com/rivierabarsp/", "https://www.threads.com/@rivierabarsp"]
+  }
+  </script>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ================= NAVEGAÇÃO ================= -->
+  <header class="nav" data-nav>
+    <div class="nav__bar">
+      <a class="nav__logo" href="#inicio" aria-label="Riviera Bar, voltar ao início">
+        <img data-pic="logo-white" sizes="132px" alt="" loading="eager">
+      </a>
+      <nav class="nav__primary" aria-label="Principal">
+        <ul class="nav__links">
+          <li><a href="#historia" data-nav-link="historia">História</a></li>
+          <li><a href="#cozinha" data-nav-link="cozinha">Cozinha</a></li>
+          <li><a href="#drinks" data-nav-link="drinks">Drinks</a></li>
+          <li><a href="#visite" data-nav-link="visite">Visite</a></li>
+        </ul>
+      </nav>
+      <p class="nav__status status" aria-live="off"><i class="status__dot" aria-hidden="true"></i><span data-status-short>Aberto agora</span></p>
+      <a class="btn btn--light btn--sm nav__cta" href="https://r.odionisio.com/riviera-bar" target="_blank" rel="noopener">Reservar <span aria-hidden="true">↗</span></a>
+      <button class="nav__burger" type="button" aria-expanded="false" aria-controls="menu-mobile" data-burger>
+        <span class="nav__burger-lines" aria-hidden="true"><i></i><i></i></span>
+        <span data-burger-label>Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mmenu" id="menu-mobile" role="dialog" aria-modal="true" aria-label="Menu" hidden data-mmenu>
+    <div class="mmenu__inner">
+      <ol class="mmenu__links">
+        <li><a href="#historia">História</a></li>
+        <li><a href="#cozinha">Cozinha</a></li>
+        <li><a href="#pizzas">Pizzas</a></li>
+        <li><a href="#drinks">Drinks</a></li>
+        <li><a href="#visite">Visite</a></li>
+      </ol>
+      <a class="btn btn--light mmenu__cta" href="https://r.odionisio.com/riviera-bar" target="_blank" rel="noopener">Reservar no Andar Superior <span aria-hidden="true">↗</span></a>
+      <p class="mmenu__foot">Av. Paulista, 2584 · Aberto 24h</p>
+    </div>
+  </div>
+
+  <main id="conteudo">
+
+    <!-- ================= 01 · HERO ================= -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title" data-section="inicio">
+      <h1 class="visually-hidden" id="hero-title">Riviera Bar: sempre abertos, desde 1949, ou desde sempre</h1>
+      <p class="hero__word hero__word--a" aria-hidden="true" data-hero-a>Sempre</p>
+      <p class="hero__word hero__word--b" aria-hidden="true" data-hero-b>Abertos</p>
+
+      <figure class="hero__cut" data-hero-cut>
+        <img data-pic="pizza-recorte" sizes="(min-width: 1024px) 46vw, 92vw" alt="Rapaz de boné mordendo uma fatia de pizza de pepperoni" loading="eager" fetchpriority="high">
+      </figure>
+
+      <div class="hero__foot">
+        <p class="hero__since serif" data-intro>Desde 1949,<br><em>ou desde sempre.</em></p>
+        <div class="hero__clock" data-intro>
+          <p class="status status--big"><i class="status__dot" aria-hidden="true"></i><span data-status-long>Aberto agora</span></p>
+          <p class="hero__time"><span data-clock>--:--</span> em São Paulo</p>
+        </div>
+        <div class="hero__ctas" data-intro>
+          <a class="btn btn--light" href="https://r.odionisio.com/riviera-bar" target="_blank" rel="noopener">Reservar mesa <span aria-hidden="true">↗</span></a>
+          <a class="btn btn--line" href="#cozinha">Ver cardápio <span aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 02 · MANIFESTO ================= -->
+    <section class="manifesto paper" id="manifesto" aria-labelledby="manifesto-title" data-section="inicio" tabindex="-1">
+      <div class="container manifesto__grid">
+        <h2 class="label" id="manifesto-title">Manifesto · Bar 24h</h2>
+        <div class="manifesto__text">
+          <p class="stanza serif" data-stanza>Mesmo quando as portas estão fechadas<br>e as cadeiras estão sobre as mesas,</p>
+          <p class="refrain display" data-stanza>Estamos abertos.
+            <svg class="refrain__mark" viewBox="0 0 600 40" preserveAspectRatio="none" aria-hidden="true"><path d="M4 28 C 120 12, 260 34, 380 18 S 560 22, 596 14" /></svg>
+          </p>
+          <p class="stanza serif" data-stanza>Para os clientes de sempre, desde 1949.<br><em>Para os novos, desde sempre.</em></p>
+          <p class="stanza serif" data-stanza>Porque estar aberto é um estado de espírito.</p>
+          <p class="stanza serif" data-stanza>Acreditamos que um bar tem um dever: servir.<br>E nós escolhemos servir de inspiração.<br><em>Para conversas, para encontros, para mudanças.</em></p>
+          <p class="refrain display" data-stanza>Você escolhe.<br>Estamos abertos.</p>
+          <p class="manifesto__src">Trecho do manifesto que abre o cardápio da casa.</p>
+        </div>
+        <figure class="manifesto__cartoon" data-parallax="-14">
+          <img data-pic="cartum-batatas" sizes="(min-width: 1024px) 26vw, 64vw" alt="Cartum: mulher no balcão com um drinque e batatas, dizendo “Eu morreria sem batatas bravas às 3h da manhã!”">
+          <figcaption>Salvando vidas 24 horas por dia.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= 03 · HISTÓRIA ================= -->
+    <section class="hist" id="historia" aria-labelledby="hist-title" data-section="historia" tabindex="-1">
+      <div class="hist__pin" data-hist>
+        <header class="hist__head container">
+          <h2 class="display hist__title" id="hist-title">Uma esquina, <em class="serif"><span data-age>77</span> anos</em> de conversa.</h2>
+          <p class="hist__lead">Paulista com Consolação, térreo do Edifício Anchieta. Desde 1949, o balcão do Riviera viu a cidade mudar e continuou aberto.</p>
+        </header>
+        <div class="hist__viewport" data-hist-viewport>
+          <ol class="hist__track" data-hist-track>
+            <li class="chap">
+              <p class="chap__year display">1949</p>
+              <div class="chap__body">
+                <h3 class="chap__title">Abre o Riviera</h3>
+                <p>Ignácio Maniscalco inaugura o bar na esquina da Paulista. No começo, era casa de família: juízes, médicos e vizinhos chegavam para um lanche, um chá ou um sorvete.</p>
+              </div>
+            </li>
+            <li class="chap chap--photo">
+              <figure class="chap__fig">
+                <img data-pic="arquivo-escada" sizes="(min-width: 1024px) 46vw, 82vw" alt="Foto de arquivo em preto e branco do salão do Riviera, com mesas de toalha xadrez e a escada curva">
+                <figcaption>Arquivo do Riviera · o salão e a escada curva</figcaption>
+              </figure>
+            </li>
+            <li class="chap">
+              <p class="chap__year display">Anos 60–70</p>
+              <div class="chap__body">
+                <h3 class="chap__title">A mesa da cidade</h3>
+                <p>Chegam os estudantes do Largo São Francisco, da USP e do Mackenzie. Na ditadura, o bar vira lugar de reunião e de debate político.</p>
+                <blockquote class="chap__quote serif">“Tinha mesa de comunista, da UDN.”<cite>Renato Maniscalco, filho do fundador</cite></blockquote>
+              </div>
+            </li>
+            <li class="chap chap--names">
+              <p class="chap__year display">Boêmios</p>
+              <ul class="chap__names display" aria-label="Frequentadores ilustres">
+                <li>Chico Buarque</li><li>Toquinho</li><li>Sá &amp; Guarabira</li><li>Marília Pêra</li><li>Marília Gabriela</li><li>Henfil</li><li>Irmãos Caruso</li>
+              </ul>
+            </li>
+            <li class="chap">
+              <p class="chap__year display">O Balão</p>
+              <div class="chap__body">
+                <h3 class="chap__title">Cartunistas no balcão</h3>
+                <p>Estudantes da ECA e da FAU — os irmãos Caruso, Luiz Gê, Angeli e Laerte — se reuniam ali para criar a revista <em>O Balão</em>. Angeli levou o balcão e o garçom Juvenal Martins, que serviu a casa por mais de 40 anos, para as tiras da Rê Bordosa.</p>
+              </div>
+            </li>
+            <li class="chap">
+              <p class="chap__year display">1987</p>
+              <div class="chap__body">
+                <h3 class="chap__title">No cinema</h3>
+                <p>O salão do térreo vira cenário de <em>Besame Mucho</em>, de Francisco Ramalho Jr., baseado na peça de Mário Prata.</p>
+              </div>
+            </li>
+            <li class="chap">
+              <p class="chap__year display">2013</p>
+              <div class="chap__body">
+                <h3 class="chap__title">O balcão vermelho</h3>
+                <p>Depois de fechar em 2006, o Riviera é reaberto por Alex Atala e Facundo Guerra. O projeto de Márcio Kogan cria o balcão em forma de ameba, com tampo de fórmica vermelha, em volta do pilar central.</p>
+              </div>
+              <svg class="chap__amoeba" viewBox="0 0 400 260" aria-hidden="true" data-amoeba>
+                <path d="M62 132c-22-40 6-92 58-100 46-7 70 22 112 14 50-9 104 6 116 52 12 47-24 70-26 104-2 38-52 52-96 40-40-11-62 10-104 4C70 240 30 210 44 176c6-15 26-26 18-44z" />
+                <circle cx="206" cy="130" r="22" />
+              </svg>
+            </li>
+            <li class="chap">
+              <p class="chap__year display">2014</p>
+              <div class="chap__body">
+                <blockquote class="chap__quote chap__quote--big serif">“Sob o letreiro em neon do Riviera Bar proponho um brinde.”<cite>Chico Buarque, <em>O Irmão Alemão</em></cite></blockquote>
+              </div>
+            </li>
+            <li class="chap">
+              <p class="chap__year display">2018</p>
+              <div class="chap__body">
+                <h3 class="chap__title">Patrimônio da Paulista</h3>
+                <p>O Edifício Anchieta, de 1941, projetado pelo escritório MMM Roberto, é tombado com os edifícios históricos do eixo da Avenida Paulista.</p>
+              </div>
+            </li>
+            <li class="chap chap--now">
+              <p class="chap__year display">2022</p>
+              <div class="chap__body">
+                <h3 class="chap__title">Agora, 24 horas</h3>
+                <p>Depois de fechar no início da pandemia, o Riviera reabre em fevereiro de 2022. Desde então, não fecha mais: aberto dia e noite, todos os dias.</p>
+                <a class="link-arrow" href="#visite">Venha agora <span aria-hidden="true">→</span></a>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <div class="hist__progress container" aria-hidden="true"><span class="hist__bar"><i data-hist-bar></i></span></div>
+      </div>
+    </section>
+
+    <!-- ================= 04 · COZINHA ================= -->
+    <section class="kitchen paper" id="cozinha" aria-labelledby="kitchen-title" data-section="cozinha" tabindex="-1">
+      <div class="container">
+        <header class="kitchen__head">
+          <p class="label">Cozinha</p>
+          <h2 class="display kitchen__title" id="kitchen-title" data-split>Democráticos <span class="serif">por essência.</span></h2>
+          <p class="kitchen__lead">Do frango frito ao arroz de pato, a qualquer hora. Uma seleção do cardápio da casa:</p>
+        </header>
+
+        <div class="kitchen__grid">
+          <div class="kitchen__media" aria-hidden="true" data-kitchen-media>
+            <figure class="kitchen__photo is-active" data-photo="fritos"><img data-pic="mozzarella" sizes="(min-width: 1024px) 38vw, 0px" alt=""></figure>
+            <figure class="kitchen__photo" data-photo="democraticos"><img data-pic="espaguete" sizes="(min-width: 1024px) 38vw, 0px" alt=""></figure>
+            <figure class="kitchen__photo" data-photo="lanchonete"><img data-pic="burger" sizes="(min-width: 1024px) 38vw, 0px" alt=""></figure>
+            <figure class="kitchen__photo" data-photo="sobremesas"><img data-pic="churros" sizes="(min-width: 1024px) 38vw, 0px" alt=""></figure>
+          </div>
+
+          <div class="kitchen__menu">
+            <article class="dishes" data-group="fritos">
+              <figure class="dishes__photo"><img data-pic="mozzarella" sizes="(max-width: 1023px) 92vw, 0px" alt="Mozzarella sticks com molho e um chope, em foto preto e branco"></figure>
+              <h3 class="dishes__title display">Entradas &amp; fritos</h3>
+              <ul>
+                <li><b>Frango frito</b><span>A cara do Riviera! Coxinha da asa com molho picante.</span></li>
+                <li><b>Pastel flauta de carne</b><span>Preferido do chef! Acompanha vinagrete.</span></li>
+                <li><b>Mozzarella sticks</b><span>Com muuuito queijo e molho de tomate apimentado.</span></li>
+                <li><b>Batatas bravas</b><span>Páprica picante, lemon pepper, alecrim e sal, com maionese de páprica.</span></li>
+                <li><b>Pão com sardinha</b><span>Pão miga, sardinha espalmada, sour cream, cebola caramelizada e limão.</span></li>
+              </ul>
+            </article>
+            <article class="dishes" data-group="democraticos">
+              <figure class="dishes__photo"><img data-pic="espaguete" sizes="(max-width: 1023px) 92vw, 0px" alt="Mulher de óculos escuros comendo espaguete, com uma taça de vinho branco"></figure>
+              <h3 class="dishes__title display">Democráticos</h3>
+              <ul>
+                <li><b>Spaghetti negro com lula</b><span>Molho de tomate, vinho branco e manjericão.</span></li>
+                <li><b>Arroz de pato</b><span>Pato confit desfiado ao demi-glace com vinho branco, paio e ervas frescas.</span></li>
+                <li><b>Rabada</b><span>Com polenta mole e agrião.</span></li>
+                <li><b>Steak frites</b><span>Filé mignon com fritas, molho mostarda ou gorgonzola.</span></li>
+                <li><b>Polenta cremosa</b><span>Mix de cogumelos, farofa da casa, ovo mollet e alho-poró frito.</span></li>
+              </ul>
+            </article>
+            <article class="dishes" data-group="lanchonete">
+              <figure class="dishes__photo"><img data-pic="burger" sizes="(max-width: 1023px) 92vw, 0px" alt="Mão pegando uma batata frita ao lado de um hambúrguer"></figure>
+              <h3 class="dishes__title display">Lanchonete</h3>
+              <ul>
+                <li><b>24 Horas</b><span>Blend da casa, pão francês de hambúrguer, coleslaw, alface e bacon.</span></li>
+                <li><b>Lancha à parmegiana</b><span>Filé mignon empanado, molho de tomate, mussarela e rúcula.</span></li>
+                <li><b>Hot dog</b><span>Frankfurt tostada, cheddar, picles, coleslaw e bacon no brioche.</span></li>
+                <li><b>Milkshake caramelo, caramelo, caramelo</b><span>Sorvete de caramelo com flor de sal, calda de caramelo e merengue.</span></li>
+              </ul>
+            </article>
+            <article class="dishes" data-group="sobremesas">
+              <figure class="dishes__photo"><img data-pic="churros" sizes="(max-width: 1023px) 92vw, 0px" alt="Mão pegando churros, com potes de chocolate e doce de leite"></figure>
+              <h3 class="dishes__title display">Sobremesas</h3>
+              <ul>
+                <li><b>Churros</b><span>Churros espanhol, com chocolate e doce de leite.</span></li>
+                <li><b>Chocolamour</b><span>Sorvete de leite, muita calda de chocolate, farofa doce e merengue.</span></li>
+                <li><b>Pudim</b><span>Nem sempre tradicional! Consulte o sabor do dia.</span></li>
+              </ul>
+            </article>
+            <a class="btn btn--red" href="https://drive.google.com/file/d/1eYTcQeoxw12Ocu8ZevS_h83mUkC-VT-z/view" target="_blank" rel="noopener">Cardápio completo <span aria-hidden="true">↗</span></a>
+            <a class="link-arrow kitchen__en" href="https://drive.google.com/file/d/1A9irzW23qHHul5BN9OfuUklRR6eQZv7X/view" target="_blank" rel="noopener" lang="en">Menu in English <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 05 · PIZZAS ================= -->
+    <section class="pizzas" id="pizzas" aria-labelledby="pizzas-title" data-section="cozinha">
+      <header class="pizzas__head container">
+        <p class="label label--light">Pizzas broto · 24h</p>
+        <h2 class="display pizzas__title" id="pizzas-title" data-split>Os cartunistas <span class="serif">viraram pizza.</span></h2>
+        <p class="pizzas__lead">Quem fez história no balcão agora dá nome às pizzas da casa.</p>
+      </header>
+      <ul class="pizzas__list" data-pizzas>
+        <li class="pizza" data-dir="-1"><h3 class="pizza__name display">Henfil</h3><p class="pizza__desc">Molho de tomate, mussarela, pepperoni fatiado e parmesão.</p></li>
+        <li class="pizza" data-dir="1"><h3 class="pizza__name display">Chico Caruso</h3><p class="pizza__desc">Mussarela, presunto, cebola roxa, ervilha, azeitona, salsa criolla e ovo.</p></li>
+        <li class="pizza" data-dir="-1"><h3 class="pizza__name display">Laerte</h3><p class="pizza__desc">Abobrinha, gorgonzola, raspas de limão, azeitonas e manjericão.</p></li>
+        <li class="pizza" data-dir="1"><h3 class="pizza__name display">Luiz Gê</h3><p class="pizza__desc">Mussarela, mussarela de búfala, tomate, manjericão, rúcula e pesto.</p></li>
+        <li class="pizza" data-dir="-1"><h3 class="pizza__name display">Rê Bordosa</h3><p class="pizza__desc">Molho de tomate, burrata, manjericão e molho ao pesto.</p></li>
+      </ul>
+      <img data-pic="mao-recorte" class="pizzas__hand" sizes="(min-width: 1024px) 30vw, 60vw" alt="" aria-hidden="true" data-parallax="-30">
+    </section>
+
+    <!-- ================= 06 · DRINKS ================= -->
+    <section class="drinks" id="drinks" aria-labelledby="drinks-title" data-section="drinks" tabindex="-1">
+      <div class="container drinks__grid">
+        <div class="drinks__media" data-drinks-media>
+          <figure class="drinks__photo drinks__photo--a" data-parallax="-6"><img data-pic="martini" sizes="(min-width: 1024px) 34vw, 78vw" alt="Mão com casaco de pele segurando um dry martini com azeitona"></figure>
+          <figure class="drinks__photo drinks__photo--b" data-parallax="14"><img data-pic="drink" sizes="(min-width: 1024px) 18vw, 44vw" alt="Coquetel com gelo em copo baixo sobre o parapeito"></figure>
+        </div>
+        <div class="drinks__body">
+          <p class="label label--light">Drinks &amp; bebidas</p>
+          <h2 class="display drinks__title" id="drinks-title" data-split>Autorais, <span class="serif">clássicos e um chope bem tirado.</span></h2>
+          <ul class="drinks__list">
+            <li data-reveal><b class="display">Gabo</b><span>Rum envelhecido com fat wash de coco, cold brew, coco tostado e licor de café.</span><i>Doce e aveludado</i></li>
+            <li data-reveal><b class="display">Eugênia</b><span>Tanqueray, vinho do porto branco e cordial de uvaia e jasmim.</span><i>Doce e frutado</i></li>
+            <li data-reveal><b class="display">Akakor</b><span>Pisco com pimenta de cheiro, mel com tucupi, gengibre e cítricos.</span><i>Refrescante e umami</i></li>
+            <li data-reveal><b class="display">Maracutaia</b><span>JW Black Label, jerez fino, cordial de manjericão, cajuína e CO₂.</span><i>Frutado e refrescante</i></li>
+            <li data-reveal><b class="display">Jorge Maravilha</b><span>Ketel One, amaretto, água de coco, cordial de tamarindo e bitter de laranja.</span><i>Adocicado e amendoado</i></li>
+          </ul>
+          <div class="drinks__classics" data-reveal>
+            <p class="label label--light">Clássicos · “O melhor bar do universo”</p>
+            <p class="drinks__chips">Negroni · Dry Martini · Rabo de Galo · Penicillin · White Lady · Macunaíma · Caju Amigo · Manhattan · Tommy’s Margarita</p>
+            <p class="drinks__zero">Sem álcool: <b>Bethânia</b> e <b>Rita</b>. E, claro, chopp Brahma.</p>
+          </div>
+        </div>
+      </div>
+      <figure class="drinks__cartoon" data-parallax="-10">
+        <img data-pic="cartum-cosmopolitan" sizes="(min-width: 1024px) 22vw, 56vw" alt="Cartum: um astronauta no balcão vermelho pede “Um cosmopolitan, por favor” ao garçom">
+      </figure>
+    </section>
+
+    <!-- ================= 07 · VISITE ================= -->
+    <section class="visit" id="visite" aria-labelledby="visit-title" data-section="visite" tabindex="-1">
+      <div class="container">
+        <p class="label label--light">Visite</p>
+        <h2 class="visually-hidden" id="visit-title">Visite o Riviera</h2>
+        <p class="visit__clock display" aria-hidden="true"><span data-clock-big>--:--</span></p>
+        <p class="visit__now serif" data-status-sentence>Agora em São Paulo. E estamos abertos.</p>
+
+        <div class="visit__grid">
+          <div class="visit__item">
+            <h3 class="label label--light">Endereço</h3>
+            <address>Av. Paulista, 2584 – Consolação<br>Esquina com a Rua da Consolação<br>São Paulo – SP, 01310-300</address>
+            <a class="link-arrow" href="https://www.google.com/maps/search/?api=1&amp;query=Riviera+Bar%2C+Avenida+Paulista+2584%2C+S%C3%A3o+Paulo" target="_blank" rel="noopener">Como chegar <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="visit__item">
+            <h3 class="label label--light">Funcionamento</h3>
+            <p><b>24 horas, todos os dias.</b><br>Fechamos apenas na primeira segunda-feira de cada mês, para manutenção.</p>
+          </div>
+          <div class="visit__item">
+            <h3 class="label label--light">Reservas</h3>
+            <p>Para o Andar Superior: de segunda a quinta, almoço às 13h ou jantar às 19h; sexta, sábado e domingo, almoço às 13h. Nos outros horários, por ordem de chegada.</p>
+          </div>
+        </div>
+
+        <div class="visit__ctas">
+          <a class="btn btn--light btn--lg" href="https://r.odionisio.com/riviera-bar" target="_blank" rel="noopener">Reservar mesa <span aria-hidden="true">↗</span></a>
+          <a class="btn btn--line" href="http://wa.me/5511948890012" target="_blank" rel="noopener">WhatsApp <span aria-hidden="true">↗</span></a>
+          <a class="btn btn--line" href="https://drive.google.com/file/d/1eYTcQeoxw12Ocu8ZevS_h83mUkC-VT-z/view" target="_blank" rel="noopener">Cardápio <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <figure class="visit__cartoon" data-parallax="-12">
+        <img data-pic="cartum-boca" sizes="(min-width: 1024px) 22vw, 52vw" alt="Cartum: casal no balcão; ela diz “O Riviera é como a sua boca”. Legenda: não fecha nunca">
+      </figure>
+    </section>
+  </main>
+
+  <!-- ================= RODAPÉ ================= -->
+  <footer class="foot" aria-labelledby="foot-title">
+    <h2 class="visually-hidden" id="foot-title">Riviera Bar</h2>
+    <div class="container foot__grid">
+      <div class="foot__col">
+        <p class="label label--red">Riviera Bar</p>
+        <p>Av. Paulista, 2584 – Consolação<br>São Paulo – SP<br>Aberto 24h</p>
+      </div>
+      <nav class="foot__col" aria-label="Navegação do rodapé">
+        <p class="label label--red">Navegue</p>
+        <ul>
+          <li><a href="#historia">História</a></li>
+          <li><a href="#cozinha">Cozinha</a></li>
+          <li><a href="#pizzas">Pizzas</a></li>
+          <li><a href="#drinks">Drinks</a></li>
+          <li><a href="#visite">Visite</a></li>
+        </ul>
+      </nav>
+      <div class="foot__col">
+        <p class="label label--red">Contato</p>
+        <ul>
+          <li><a href="https://r.odionisio.com/riviera-bar" target="_blank" rel="noopener">Reservas</a></li>
+          <li><a href="http://wa.me/5511948890012" target="_blank" rel="noopener">Central de Relacionamento</a></li>
+          <li><a href="https://falae.experienciab2s.com/21015d5c-898b-48d6-999b-9d5bac6a0ca4" target="_blank" rel="noopener">Como foi sua experiência?</a></li>
+        </ul>
+      </div>
+      <div class="foot__col">
+        <p class="label label--red">Siga</p>
+        <ul>
+          <li><a href="https://www.instagram.com/rivierabarsp/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://www.threads.com/@rivierabarsp" target="_blank" rel="noopener">Threads</a></li>
+          <li><a href="https://linktr.ee/rivierabarsp" target="_blank" rel="noopener">Playlists do Rivi</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot__logo" data-foot-logo>
+      <img data-pic="logo-red" sizes="92vw" alt="Riviera">
+    </div>
+    <div class="container foot__legal">
+      <p>© <span data-year>2026</span> Riviera Bar · Uma casa da Fábrica de Bares</p>
+      <p>Se beber, não dirija. Venda proibida para menores de 18 anos.</p>
+    </div>
+  </footer>
+
+  <a class="sticky-cta" href="https://r.odionisio.com/riviera-bar" target="_blank" rel="noopener" data-sticky-cta>Reservar mesa <span aria-hidden="true">↗</span></a>
+</body>
+</html>
